@@ -1,636 +1,341 @@
 ---
-# You can also start simply with 'default'
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
+theme: default
+background: https://source.unsplash.com/1600x900/?technology,dark
 class: text-center
-# https://sli.dev/features/drawing
+highlighter: shiki
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
+title: Claude 3.7 Sonnet
 mdc: true
 ---
 
-# Welcome to Slidev
+# Claude 3.7 Sonnet
 
-Presentation slides for developers
+<div class="text-6xl font-bold text-gradient-red-blue mb-4">100 SECONDS OF KNOWLEDGE</div>
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div>
-
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
+<div class="abs-br m-6 flex gap-2 text-xl">
+  <a href="https://github.com/brylie/create-with-brylie" target="_blank" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+    <carbon-logo-github />&nbsp;
+    github.com/brylie
   </a>
 </div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
 ---
-transition: fade-out
+layout: default
 ---
 
-# What is Slidev?
+# What is Claude 3.7?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
+<div class="text-xl mt-2">
+  <div class="grid grid-cols-2 gap-16">
+    <div>
+      <div class="text-5xl font-bold mb-4 text-purple-400">The Ferrari of AI models</div>
+      <div class="text-base opacity-70">Full name: Claude 3.7 Sonnet</div>
+      <div class="text-base opacity-70">Released: February 2025</div>
+      <div class="text-base opacity-70">Made by: Anthropic</div>
+      <div class="mt-8 text-lg">
+        Fast when you need it. Careful when it matters. Production-ready for the real world.
+      </div>
+    </div>
+    <div class="flex items-center justify-center">
+      <div class="text-center">
+        <div class="flex justify-center">
+          <carbon:rocket class="text-9xl text-blue-500"/>
+        </div>
+        <div class="text-2xl font-bold mt-4">State-of-the-art performance</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
-transition: slide-up
-level: 2
+layout: default
 ---
 
-# Navigation
+# The Big Innovation: Hybrid Reasoning
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+<div class="grid grid-cols-2 gap-8 mt-8">
+  <div>
+    <div class="text-2xl font-bold mb-6 text-green-400">Switch between:</div>
+    <div class="mb-4 flex items-center">
+      <carbon:flash class="text-yellow-400 text-3xl mr-4"/>
+      <span class="text-xl">Quick responses for simple tasks</span>
+    </div>
+    <div class="mb-4 flex items-center">
+      <carbon:idea class="text-blue-400 text-3xl mr-4"/>
+      <span class="text-xl">Deep thinking for complex problems</span>
+    </div>
+    <div class="text-base opacity-70 mt-8">
+      First model to combine both modes in one system
+    </div>
+  </div>
+  <div>
+    ```javascript {all|2-3|5-9}
+    // Normal mode: Quick response
+    const quickAnswer = claude.complete("What's 2+2?"); 
+    // Near instant
 
-## Keyboard Shortcuts
+    // Extended thinking: Deep analysis 
+    const deepAnswer = claude.complete({
+      prompt: "Solve this complex math proof...",
+      extendedThinking: true // More time, higher accuracy
+    });
+    ```
+  </div>
+</div>
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+---
+layout: default
+class: text-center
+---
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+# Benchmark Destruction
+
+<div class="grid grid-cols-3 gap-4 mt-12">
+  <div class="flex flex-col items-center border border-gray-400 rounded-lg p-6 bg-gray-800 bg-opacity-50">
+    <div class="text-5xl font-bold text-blue-400 mb-4">84.8%</div>
+    <div class="text-xl">GPQA Diamond</div>
+    <div class="text-sm opacity-70">(Graduate-level reasoning)</div>
+  </div>
+  <div class="flex flex-col items-center border border-gray-400 rounded-lg p-6 bg-gray-800 bg-opacity-50">
+    <div class="text-5xl font-bold text-green-400 mb-4">80.0%</div>
+    <div class="text-xl">AIME 2024</div>
+    <div class="text-sm opacity-70">(High school math competition)</div>
+  </div>
+  <div class="flex flex-col items-center border border-gray-400 rounded-lg p-6 bg-gray-800 bg-opacity-50">
+    <div class="text-5xl font-bold text-purple-400 mb-4">70.3%</div>
+    <div class="text-xl">SWE-bench Verified</div>
+    <div class="text-sm opacity-70">(Real software engineering tasks)</div>
+  </div>
+</div>
+
+<div class="mt-12 text-xl text-yellow-400">
+  Outperforming OpenAI's o1, o3-mini, and DeepSeek R1 across multiple benchmarks
+</div>
 
 ---
 layout: two-cols
-layoutClass: gap-16
 ---
 
-# Table of contents
+# Code Editing
 
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+<div class="text-xl mt-4">
+  <div class="flex items-center mb-4">
+    <carbon:checkmark-filled class="text-green-500 mr-2"/> Front-end development
+  </div>
+  <div class="flex items-center mb-4">
+    <carbon:checkmark-filled class="text-green-500 mr-2"/> Back-end systems
+  </div>
+  <div class="flex items-center mb-4">
+    <carbon:checkmark-filled class="text-green-500 mr-2"/> Testing and debugging
+  </div>
+  <div class="flex items-center mb-4">
+    <carbon:checkmark-filled class="text-green-500 mr-2"/> Production-ready code
+  </div>
+  <div class="flex items-center mb-4">
+    <carbon:checkmark-filled class="text-green-500 mr-2"/> Fewer hallucinations
+  </div>
+</div>
 
 ::right::
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+```python
+import anthropic
 
----
-layout: image-right
-image: https://cover.sli.dev
----
+client = anthropic.Client(
+    api_key="your_key_here"
+)
 
-# Code
+response = client.completions.create(
+    model="claude-3-7-sonnet-20250219",
+    prompt="Fix this React component that's causing memory leaks",
+    max_tokens_to_sample=800,
+)
 
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
+print(response.completion)
 ```
 
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
 ---
-level: 2
+layout: default
 ---
 
-# Shiki Magic Move
+# Token Limits? What Token Limits?
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
+<div class="grid grid-cols-2 gap-12 mt-8">
+  <div class="flex flex-col items-center justify-center">
+    <div class="text-8xl font-bold text-blue-500">128K</div>
+    <div class="text-2xl mt-4">Tokens output limit</div>
+    <div class="text-base opacity-70 mt-2">15x previous versions</div>
   </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
+  <div class="flex flex-col justify-center">
+    <div class="text-xl mb-4">What can you do with 128K tokens?</div>
+    <div class="flex items-center mb-3">
+      <carbon:document class="text-yellow-500 mr-2"/> Generate entire codebases
+    </div>
+    <div class="flex items-center mb-3">
+      <carbon:document class="text-yellow-500 mr-2"/> Process large datasets
+    </div>
+    <div class="flex items-center mb-3">
+      <carbon:document class="text-yellow-500 mr-2"/> Create comprehensive analyses
+    </div>
+    <div class="flex items-center">
+      <carbon:document class="text-yellow-500 mr-2"/> Write full technical documentation
+    </div>
   </div>
 </div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
+---
+layout: default
 ---
 
-# LaTeX
+# Claude Code - Your AI Pair Programmer
 
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
+<div class="grid grid-cols-2 gap-8 mt-8">
+  <div>
+    <div class="text-xl mb-6">A revolutionary command-line tool</div>
+    <div class="flex items-center mb-4">
+      <carbon:search class="text-blue-400 mr-2"/> Search and read codebases
+    </div>
+    <div class="flex items-center mb-4">
+      <carbon:edit class="text-blue-400 mr-2"/> Edit files intelligently
+    </div>
+    <div class="flex items-center mb-4">
+      <carbon:test class="text-blue-400 mr-2"/> Write and run tests
+    </div>
+    <div class="flex items-center mb-4">
+      <carbon:cloud-upload class="text-blue-400 mr-2"/> Commit directly to GitHub
+    </div>
+    <div class="flex items-center mb-4">
+      <carbon:terminal class="text-blue-400 mr-2"/> Execute command-line tools
+    </div>
   </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
+  <div class="flex flex-col justify-center">
+    <div class="bg-gray-900 p-4 rounded-lg font-mono text-sm">
+      <div class="text-gray-400">$</div>
+      <div class="text-green-400">claude-code "Refactor our authentication system to use JWT"</div>
+      <div class="text-gray-300 mt-2">Analyzing codebase...</div>
+      <div class="text-gray-300">Found 3 files that need changes</div>
+      <div class="text-gray-300">Creating JWT implementation...</div>
+      <div class="text-gray-300">Running tests...</div>
+      <div class="text-green-500">All tests passed! Ready to commit.</div>
+    </div>
+  </div>
+</div>
 
 ---
+layout: default
+class: text-center
+---
 
-# Monaco Editor
+# Real World Applications
 
-Slidev provides built-in Monaco Editor support.
+<div class="grid grid-cols-5 gap-4 mt-12">
+  <div class="flex flex-col items-center p-4">
+    <carbon:chat class="text-5xl text-blue-400 mb-4"/>
+    <div class="text-sm">Customer-facing Agents</div>
+  </div>
+  <div class="flex flex-col items-center p-4">
+    <carbon:chart-line class="text-5xl text-green-400 mb-4"/>
+    <div class="text-sm">Visual Data Extraction</div>
+  </div>
+  <div class="flex flex-col items-center p-4">
+    <carbon:search class="text-5xl text-yellow-400 mb-4"/>
+    <div class="text-sm">Advanced Q&A Systems</div>
+  </div>
+  <div class="flex flex-col items-center p-4">
+    <carbon:earth class="text-5xl text-purple-400 mb-4"/>
+    <div class="text-sm">Multilingual Support</div>
+  </div>
+  <div class="flex flex-col items-center p-4">
+    <carbon:code class="text-5xl text-red-400 mb-4"/>
+    <div class="text-sm">Complex Coding</div>
+  </div>
+</div>
 
-Add `{monaco}` to the code block to turn it into an editor:
+<div class="mt-12 text-xl">
+  Transforming industries with AI that can think, reason, and create
+</div>
 
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
+---
+layout: default
+---
 
-const arr = ref(emptyArray(10))
-```
+# Pricing
 
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
+<div class="grid grid-cols-2 gap-16 mt-12">
+  <div class="flex flex-col items-center justify-center">
+    <div class="text-4xl font-bold mb-4">Same pricing as before</div>
+    <div class="text-2xl text-green-400 mt-6">$3</div>
+    <div class="text-base">per million input tokens</div>
+    <div class="text-2xl text-green-400 mt-6">$15</div>
+    <div class="text-base">per million output tokens</div>
+  </div>
+  <div>
+    <div class="text-xl mb-6">Available on:</div>
+    <div class="flex items-center mb-4">
+      <carbon:user class="text-blue-400 mr-2"/> Free tier (basic access)
+    </div>
+    <div class="flex items-center mb-4">
+      <carbon:user-profile class="text-blue-400 mr-2"/> Pro tier (with extended thinking)
+    </div>
+    <div class="flex items-center mb-4">
+      <carbon:partnership class="text-blue-400 mr-2"/> Team accounts
+    </div>
+    <div class="flex items-center mb-4">
+      <carbon:enterprise class="text-blue-400 mr-2"/> Enterprise plans
+    </div>
+    <div class="flex items-center mt-8">
+      <carbon:api class="text-yellow-400 mr-2"/> Accessible via API, Amazon Bedrock, and Google Cloud
+    </div>
+  </div>
+</div>
 
 ---
 layout: center
 class: text-center
 ---
 
-# Learn More
+# Claude 3.7 Sonnet
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+<div class="text-3xl mb-8">Not just an incremental update - a new era of AI reasoning</div>
 
-<PoweredBySlidev mt-10 />
+<div class="flex justify-center gap-8 mt-12">
+  <div class="flex flex-col items-center">
+    <carbon:idea class="text-6xl text-yellow-400 mb-4"/>
+    <div>Hybrid Reasoning</div>
+  </div>
+  <div class="flex flex-col items-center">
+    <carbon:code class="text-6xl text-blue-400 mb-4"/>
+    <div>Advanced Coding</div>
+  </div>
+  <div class="flex flex-col items-center">
+    <carbon:document class="text-6xl text-green-400 mb-4"/>
+    <div>Massive Context</div>
+  </div>
+</div>
+
+<div class="mt-16 text-xl opacity-80">
+  Thanks for watching! Hit subscribe for more 100-second explainers.
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+# Post-Credits Scene
+
+<div class="text-3xl mb-12">Oh, and it can operate computers like a human would...</div>
+
+<div class="flex justify-center">
+  <carbon:warning-alt class="text-6xl text-yellow-400 mb-4"/>
+</div>
+
+<div class="text-2xl mt-8 text-red-400">
+  The robot uprising starts now
+</div>
+
+<div class="text-xl mt-4 opacity-70">
+  Sleep tight!
+</div>
