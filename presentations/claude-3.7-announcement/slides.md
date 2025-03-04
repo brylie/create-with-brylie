@@ -5,7 +5,7 @@ class: text-center
 highlighter: shiki
 drawings:
   persist: false
-transition: slide-left
+transition: fade
 title: Claude 3.7 Sonnet
 mdc: true
 ---
