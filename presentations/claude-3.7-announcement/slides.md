@@ -21,6 +21,10 @@ mdc: true
   </a>
 </div>
 
+<!--
+Claude 3.7 Sonnet just dropped and it's changing the AI game. I'm going to break down this monster in just 100 seconds.
+-->
+
 ---
 layout: default
 ---
@@ -48,6 +52,10 @@ layout: default
     </div>
   </div>
 </div>
+
+<!--
+Claude 3.7 is Anthropic's latest AI model blowing up the charts on nearly every benchmark. Think of it as the Ferrari of AI models - fast when you need it, but with the option to slow down and think carefully when the problem gets complex.
+-->
 
 ---
 layout: two-cols
@@ -85,6 +93,10 @@ const deepAnswer = claude.complete({
 });
 ```
 
+<!--
+The killer feature? Something Anthropic calls "hybrid reasoning." Claude can now toggle between quick responses and deep, step-by-step thinking. It's like having both a sprinter and chess grandmaster in one package.
+-->
+
 ---
 layout: default
 class: text-center
@@ -113,6 +125,16 @@ class: text-center
 <div class="mt-12 text-xl text-yellow-400">
   Outperforming OpenAI's o1, o3-mini, and DeepSeek R1 across multiple benchmarks
 </div>
+
+<!--
+Claude 3.7 is shredding the competition on benchmarks. Look at these numbers:
+
+- GPQA Diamond: 84.8% with extended thinking
+- AIME 2024 math: 80%
+- SWE-bench Verified: 70.3% with scaffold
+
+That SWE-bench result means it can solve real software engineering problems better than most junior devs.
+-->
 
 ---
 layout: two-cols
@@ -156,6 +178,10 @@ response = client.completions.create(
 print(response.completion)
 ```
 
+<!--
+For developers, Claude 3.7 is a game changer. It does front-end, back-end, debugging, all with fewer hallucinations and more production-ready code.
+-->
+
 ---
 layout: default
 ---
@@ -184,6 +210,10 @@ layout: default
     </div>
   </div>
 </div>
+
+<!--
+Remember when AI models had tiny context windows? Claude 3.7 laughs at that with a massive 128,000 token output limit. That's about 15 times more than previous versions. Want to generate an entire codebase? Now you can.
+-->
 
 ---
 layout: default
@@ -223,6 +253,10 @@ layout: default
   </div>
 </div>
 
+<!--
+Anthropic also dropped Claude Code, a command-line tool that's like having a senior dev watching over your shoulder. It can search codebases, write tests, commit to GitHub, and more.
+-->
+
 ---
 layout: default
 class: text-center
@@ -256,6 +290,16 @@ class: text-center
 <div class="mt-12 text-xl">
   Transforming industries with AI that can think, reason, and create
 </div>
+
+<!--
+This isn't just theoretical. Claude 3.7 excels at:
+
+- Customer-facing AI agents
+- Visual data extraction
+- Advanced Q&A systems
+- Multilingual support
+- Complex coding projects
+-->
 
 ---
 layout: default
@@ -291,6 +335,10 @@ layout: default
   </div>
 </div>
 
+<!--
+Here's the kicker - same pricing as before: $3 per million input tokens, $15 per million output tokens. Extended thinking mode is available on all paid plans.
+-->
+
 ---
 layout: center
 class: text-center
@@ -319,6 +367,12 @@ class: text-center
   Thanks for watching! Hit subscribe for more 100-second explainers.
 </div>
 
+<!--
+Claude 3.7 Sonnet isn't just an incremental update - it's a fundamental shift in how AI models can reason. The combination of speed, deep thinking, and massive context windows makes this a serious contender for the AI throne.
+
+Thanks for watching! Hit subscribe for more 100-second explainers, and remember: the AI revolution won't be televised - it'll be tokenized.
+-->
+
 ---
 layout: center
 class: text-center
@@ -337,3 +391,7 @@ class: text-center
 <div class="text-xl mt-4 opacity-70">
   Sleep tight!
 </div>
+
+<!--
+Oh, and it can operate computers like a human would. Move the cursor, click buttons, type text - basically, the robot uprising starts now. Sleep tight!
+-->
