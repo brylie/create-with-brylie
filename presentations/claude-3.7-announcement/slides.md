@@ -50,40 +50,40 @@ layout: default
 </div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
 # The Big Innovation: Hybrid Reasoning
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-  <div>
-    <div class="text-2xl font-bold mb-6 text-green-400">Switch between:</div>
-    <div class="mb-4 flex items-center">
-      <carbon:flash class="text-yellow-400 text-3xl mr-4"/>
-      <span class="text-xl">Quick responses for simple tasks</span>
-    </div>
-    <div class="mb-4 flex items-center">
-      <carbon:idea class="text-blue-400 text-3xl mr-4"/>
-      <span class="text-xl">Deep thinking for complex problems</span>
-    </div>
-    <div class="text-base opacity-70 mt-8">
-      First model to combine both modes in one system
-    </div>
-  </div>
-  <div>
-    ```javascript {all|2-3|5-9}
-    // Normal mode: Quick response
-    const quickAnswer = claude.complete("What's 2+2?"); 
-    // Near instant
+<div class="text-2xl font-bold mb-6 text-green-400">Switch between:</div>
 
-    // Extended thinking: Deep analysis 
-    const deepAnswer = claude.complete({
-      prompt: "Solve this complex math proof...",
-      extendedThinking: true // More time, higher accuracy
-    });
-    ```
-  </div>
+<div class="mb-4 flex items-center">
+  <carbon:flash class="text-yellow-400 text-3xl mr-4"/>
+  <span class="text-xl">Quick responses for simple tasks</span>
 </div>
+
+<div class="mb-4 flex items-center">
+  <carbon:idea class="text-blue-400 text-3xl mr-4"/>
+  <span class="text-xl">Deep thinking for complex problems</span>
+</div>
+
+<div class="text-base opacity-70 mt-8">
+  First model to combine both modes in one system
+</div>
+
+::right::
+
+```js
+// Normal mode: Quick response
+const quickAnswer = claude.complete("What's 2+2?"); 
+// Near instant
+
+// Extended thinking: Deep analysis 
+const deepAnswer = claude.complete({
+  prompt: "Solve this complex math proof...",
+  extendedThinking: true // More time, higher accuracy
+});
+```
 
 ---
 layout: default
@@ -201,10 +201,10 @@ layout: default
       <carbon:edit class="text-blue-400 mr-2"/> Edit files intelligently
     </div>
     <div class="flex items-center mb-4">
-      <carbon:test class="text-blue-400 mr-2"/> Write and run tests
+      <carbon:chemistry class="text-blue-400 mr-2"/> Write and run tests
     </div>
     <div class="flex items-center mb-4">
-      <carbon:cloud-upload class="text-blue-400 mr-2"/> Commit directly to GitHub
+      <carbon:cloud class="text-blue-400 mr-2"/> Commit directly to GitHub
     </div>
     <div class="flex items-center mb-4">
       <carbon:terminal class="text-blue-400 mr-2"/> Execute command-line tools
@@ -323,8 +323,6 @@ class: text-center
 layout: center
 class: text-center
 ---
-
-# Post-Credits Scene
 
 <div class="text-3xl mb-12">Oh, and it can operate computers like a human would...</div>
 
