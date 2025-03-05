@@ -12,7 +12,7 @@ mdc: true
 
 # Claude 3.7 Sonnet
 
-<div class="text-6xl font-bold text-gradient-red-blue mb-4">100 SECONDS OF KNOWLEDGE</div>
+<div class="text-6xl font-bold mb-4">100 SECONDS OF KNOWLEDGE</div>
 
 <div class="abs-br m-6 flex gap-2 text-xl">
   <a href="https://github.com/brylie/create-with-brylie" target="_blank" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
